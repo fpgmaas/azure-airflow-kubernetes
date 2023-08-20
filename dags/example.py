@@ -18,6 +18,6 @@ with DAG(
 ) as dag:
     simple_task = KubernetesPodOperator(
         task_id="simple_echo_task",
-        image="exampleacr587.azurecr.io/example:latest",
+        image="exampleacr.azurecr.io/example:latest",
         name="simple-airflow-task",
     )
